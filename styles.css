@@ -221,6 +221,25 @@ code{font-family:var(--mono);font-size:.88em}
 .cmd-cat{display:inline-block;font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--bg-3);color:var(--text-mute);border:1px solid var(--border)}
 .cmd-empty{text-align:center;padding:48px;color:var(--text-mute);font-size:1.05rem}
 
+/* 命令卡片标签行 + 类型徽章 */
+.cmd-tags{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.cmd-type{display:inline-block;font-size:.66rem;font-weight:800;padding:3px 9px;border-radius:999px;border:1px solid}
+.t-builtin{background:rgba(106,183,240,.12);color:var(--blue);border-color:rgba(106,183,240,.3)}
+.t-skill{background:rgba(139,124,246,.14);color:var(--purple);border-color:rgba(139,124,246,.32)}
+.t-flow{background:rgba(94,201,161,.14);color:var(--green);border-color:rgba(94,201,161,.32)}
+.t-alias{background:var(--bg-3);color:var(--text-mute);border-color:var(--border)}
+.t-removed{background:rgba(255,95,87,.12);color:#ff8079;border-color:rgba(255,95,87,.32)}
+.cmd-card.removed{opacity:.62}
+.cmd-card.removed .cmd-name{text-decoration:line-through;text-decoration-color:rgba(255,128,121,.6)}
+
+/* 版本横幅 / 图例 / 计数 / hero 版本 */
+.hero-version{margin-top:22px;font-size:.82rem;color:var(--text-mute)}
+.hero-version strong{color:var(--accent-2)}
+.ver-banner{background:rgba(217,119,87,.08);border:1px solid rgba(217,119,87,.3);border-radius:11px;padding:12px 18px;font-size:.86rem;color:var(--text-dim);margin-bottom:14px}
+.ver-banner strong{color:var(--accent-2)}
+.legend{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:.8rem;color:var(--text-mute);margin-bottom:18px}
+.cmd-count{margin-top:10px;font-size:.8rem;color:var(--text-mute);text-align:right}
+
 /* ============ tips ============ */
 .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:24px}
 .tip-card{background:var(--panel);border:1px solid var(--border);border-radius:13px;padding:20px;display:flex;gap:14px;align-items:flex-start;transition:.18s}

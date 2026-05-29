@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claude Code 通关秘籍 · 从小白到大神</title>
-<meta name="description" content="一份由浅入深、生动有趣的 Claude Code 使用教程，涵盖全部斜杠命令、钩子、MCP、子代理与大神级工作流。">
+<title>Claude Code 通关秘籍 · 从小白到大神（v2.1.156）</title>
+<meta name="description" content="一份由浅入深、生动有趣的 Claude Code 使用教程，涵盖全部 80+ 斜杠命令、钩子、MCP、子代理与大神级工作流。截至 Claude Code v2.1.156。">
+<link rel="canonical" href="https://jliu17456-ai.github.io/claude-code-tutorial/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Claude Code 通关秘籍 · 从小白到大神">
+<meta property="og:description" content="由浅入深、生动有趣的 Claude Code 教程：全部斜杠命令速查、钩子、MCP、子代理与大神级工作流。">
+<meta property="og:url" content="https://jliu17456-ai.github.io/claude-code-tutorial/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d0b14">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23d97757'/><text x='50' y='72' font-size='62' text-anchor='middle' fill='white'>✦</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -79,10 +87,11 @@
         <a href="#slash-all" class="btn btn-ghost">⚡ 直接看斜杠命令速查</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num">40+</div><div class="stat-label">斜杠命令</div></div>
+        <div class="stat"><div class="stat-num">80+</div><div class="stat-label">斜杠命令</div></div>
         <div class="stat"><div class="stat-num">4</div><div class="stat-label">进阶章节</div></div>
         <div class="stat"><div class="stat-num">∞</div><div class="stat-label">生产力提升</div></div>
       </div>
+      <div class="hero-version">📦 内容截至 Claude Code <strong>v2.1.156</strong> · 2026-05-29</div>
     </div>
     <div class="hero-terminal">
       <div class="term-bar">
@@ -334,23 +343,44 @@ claude</code></pre></div>
       <div class="callout-title">💡 怎么用</div>
       输入 <span class="kbd">/</span> 后开始打字会<strong>模糊匹配</strong>命令名，按 <span class="kbd">Tab</span> 或回车选中。不确定有哪些？直接 <span class="kbd">/help</span>。
     </div>
+
+    <div class="callout callout-warn">
+      <div class="callout-title">⚠️ 别踩坑：<code>ultrathink</code> 不是斜杠命令</div>
+      <p style="margin:0 0 8px"><code>ultrathink</code> 是你在<strong>对话里直接输入的"思考强度"关键词</strong>——在提示中任意位置写上它，就能让 Claude 这一轮想得更深，但<strong>不会</strong>改变会话设置。注意 <code>think</code> / <code>think hard</code> 这类普通短语<strong>不被识别为关键词</strong>，只会当普通文字。</p>
+      <p style="margin:0">想<strong>永久</strong>调思考强度，用斜杠命令 <span class="kbd">/effort</span>（<code>low/medium/high/xhigh/max/ultracode</code>）。另外确实存在带 "ultra" 的命令：<span class="kbd">/ultraplan</span>（深度规划）、<span class="kbd">/ultrareview</span>（深度代码审查）。</p>
+    </div>
   </section>
 
   <section id="slash-all" class="section">
     <div class="level-tag tag-pro">⚡ 核心</div>
     <h2>全部斜杠命令速查表</h2>
-    <p class="lead">这是本教程的"宝典"。在下面的搜索框里输入关键词即可实时过滤。点任意卡片复制命令。</p>
+    <p class="lead">这是本教程的"宝典"。在搜索框输入关键词实时过滤，点任意卡片复制命令。</p>
+
+    <div class="ver-banner">
+      📦 截至 Claude Code <strong>v2.1.156</strong>（2026-05-29）整理 ·
+      命令会随版本增删，<strong>以你本机的 <span class="kbd">/help</span> 输出为最终准</strong>
+    </div>
+
+    <div class="legend">
+      <span class="cmd-type t-builtin">内置</span>原生命令
+      <span class="cmd-type t-skill">技能</span>可被自动/手动触发的 Skill
+      <span class="cmd-type t-flow">工作流</span>并行长流程
+      <span class="cmd-type t-removed">已移除</span>旧版本已删除
+    </div>
 
     <div class="cmd-search-wrap">
-      <input type="text" id="cmd-search" placeholder="🔍 搜索命令，例如：commit、记忆、mcp、清除…">
+      <input type="text" id="cmd-search" placeholder="🔍 搜索命令，例如：plan、记忆、mcp、审查、effort、技能…">
       <div class="cmd-filters" id="cmd-filters">
         <button class="filter-btn active" data-cat="all">全部</button>
-        <button class="filter-btn" data-cat="会话">会话管理</button>
-        <button class="filter-btn" data-cat="配置">配置与账户</button>
-        <button class="filter-btn" data-cat="代码">代码与 Git</button>
+        <button class="filter-btn" data-cat="会话">会话</button>
+        <button class="filter-btn" data-cat="配置">配置外观</button>
+        <button class="filter-btn" data-cat="代码">代码审查</button>
         <button class="filter-btn" data-cat="扩展">扩展能力</button>
-        <button class="filter-btn" data-cat="信息">信息与诊断</button>
+        <button class="filter-btn" data-cat="跨端">跨端平台</button>
+        <button class="filter-btn" data-cat="信息">信息诊断</button>
+        <button class="filter-btn" data-cat="其他">趣味周边</button>
       </div>
+      <div class="cmd-count" id="cmd-count"></div>
     </div>
 
     <div class="cmd-grid" id="cmd-grid"><!-- JS 注入 --></div>
