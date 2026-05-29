@@ -26,46 +26,47 @@
 <!-- ============ 移动端菜单按钮 ============ -->
 <button id="menu-toggle" aria-label="菜单">☰</button>
 
+<!-- ============ 语言切换 ============ -->
+<button id="lang-toggle" aria-label="Switch language">EN</button>
+
 <!-- ============ 侧边栏 ============ -->
 <aside id="sidebar">
   <div class="brand">
     <div class="brand-logo">✦</div>
     <div>
       <div class="brand-title">Claude Code</div>
-      <div class="brand-sub">通关秘籍 v1.0</div>
+      <div class="brand-sub" data-i18n="brand_sub">通关秘籍 v1.0</div>
     </div>
   </div>
 
   <nav id="nav">
-    <div class="nav-group-label">🌱 第一章 · 入门</div>
-    <a href="#intro" class="nav-link">这是什么神器？</a>
-    <a href="#install" class="nav-link">五分钟安装启动</a>
-    <a href="#first-chat" class="nav-link">你的第一句对话</a>
+    <div class="nav-group-label" data-i18n="nav_ch1">🌱 第一章 · 入门</div>
+    <a href="#intro" class="nav-link" data-i18n="nav_intro">这是什么神器？</a>
+    <a href="#install" class="nav-link" data-i18n="nav_install">五分钟安装启动</a>
+    <a href="#first-chat" class="nav-link" data-i18n="nav_firstchat">你的第一句对话</a>
 
-    <div class="nav-group-label">🚀 第二章 · 进阶</div>
-    <a href="#concepts" class="nav-link">四大核心概念</a>
-    <a href="#claudemd" class="nav-link">CLAUDE.md 项目大脑</a>
-    <a href="#workflow" class="nav-link">高效工作流</a>
+    <div class="nav-group-label" data-i18n="nav_ch2">🚀 第二章 · 进阶</div>
+    <a href="#concepts" class="nav-link" data-i18n="nav_concepts">四大核心概念</a>
+    <a href="#claudemd" class="nav-link" data-i18n="nav_claudemd">CLAUDE.md 项目大脑</a>
+    <a href="#workflow" class="nav-link" data-i18n="nav_workflow">高效工作流</a>
 
-    <div class="nav-group-label">⚡ 第三章 · 斜杠命令</div>
-    <a href="#slash-intro" class="nav-link">斜杠命令是什么</a>
-    <a href="#slash-all" class="nav-link">全部命令速查表</a>
-    <a href="#slash-custom" class="nav-link">自定义你的命令</a>
+    <div class="nav-group-label" data-i18n="nav_ch3">⚡ 第三章 · 斜杠命令</div>
+    <a href="#slash-intro" class="nav-link" data-i18n="nav_slashintro">斜杠命令是什么</a>
+    <a href="#slash-all" class="nav-link" data-i18n="nav_slashall">全部命令速查表</a>
+    <a href="#slash-custom" class="nav-link" data-i18n="nav_slashcustom">自定义你的命令</a>
 
-    <div class="nav-group-label">🧙 第四章 · 大神之路</div>
-    <a href="#hooks" class="nav-link">钩子 Hooks</a>
-    <a href="#mcp" class="nav-link">MCP 服务器</a>
-    <a href="#subagents" class="nav-link">子代理军团</a>
-    <a href="#pro-tips" class="nav-link">大神十二诀</a>
+    <div class="nav-group-label" data-i18n="nav_ch4">🧙 第四章 · 大神之路</div>
+    <a href="#hooks" class="nav-link" data-i18n="nav_hooks">钩子 Hooks</a>
+    <a href="#mcp" class="nav-link" data-i18n="nav_mcp">MCP 服务器</a>
+    <a href="#subagents" class="nav-link" data-i18n="nav_subagents">子代理军团</a>
+    <a href="#pro-tips" class="nav-link" data-i18n="nav_protips">大神十二诀</a>
 
-    <div class="nav-group-label">🎯 附录</div>
-    <a href="#cheatsheet" class="nav-link">键盘快捷键</a>
-    <a href="#faq" class="nav-link">常见问题</a>
+    <div class="nav-group-label" data-i18n="nav_appendix">🎯 附录</div>
+    <a href="#cheatsheet" class="nav-link" data-i18n="nav_cheatsheet">键盘快捷键</a>
+    <a href="#faq" class="nav-link" data-i18n="nav_faq">常见问题</a>
   </nav>
 
-  <div class="sidebar-footer">
-    用 ❤️ 与 Claude Code 制作
-  </div>
+  <div class="sidebar-footer" data-i18n="sidebar_footer">用 ❤️ 与 Claude Code 制作</div>
 </aside>
 
 <!-- ============ 主内容 ============ -->
@@ -75,23 +76,23 @@
   <header class="hero">
     <div class="hero-bg"></div>
     <div class="hero-inner">
-      <div class="hero-badge">✦ 终端里的编程超能力</div>
-      <h1 class="hero-title">Claude Code<br><span class="grad">通关秘籍</span></h1>
-      <p class="hero-desc">
+      <div class="hero-badge" data-i18n="hero_badge">✦ 终端里的编程超能力</div>
+      <h1 class="hero-title">Claude Code<br><span class="grad" data-i18n="hero_title2">通关秘籍</span></h1>
+      <p class="hero-desc" data-i18n="hero_desc">
         从打开终端的那一刻起，到指挥一支 AI 子代理军团——
         这是一份<strong>由浅入深、生动有趣</strong>的完整教程。<br>
         读完它，你将从 <span class="tag-newbie">小白</span> 一路晋级为 <span class="tag-god">大神</span>。
       </p>
       <div class="hero-cta">
-        <a href="#intro" class="btn btn-primary">🌱 我是小白，从头开始</a>
-        <a href="#slash-all" class="btn btn-ghost">⚡ 直接看斜杠命令速查</a>
+        <a href="#intro" class="btn btn-primary" data-i18n="hero_cta1">🌱 我是小白，从头开始</a>
+        <a href="#slash-all" class="btn btn-ghost" data-i18n="hero_cta2">⚡ 直接看斜杠命令速查</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num">80+</div><div class="stat-label">斜杠命令</div></div>
-        <div class="stat"><div class="stat-num">4</div><div class="stat-label">进阶章节</div></div>
-        <div class="stat"><div class="stat-num">∞</div><div class="stat-label">生产力提升</div></div>
+        <div class="stat"><div class="stat-num">80+</div><div class="stat-label" data-i18n="stat_cmds">斜杠命令</div></div>
+        <div class="stat"><div class="stat-num">4</div><div class="stat-label" data-i18n="stat_chapters">进阶章节</div></div>
+        <div class="stat"><div class="stat-num">∞</div><div class="stat-label" data-i18n="stat_prod">生产力提升</div></div>
       </div>
-      <div class="hero-version">📦 内容截至 Claude Code <strong>v2.1.156</strong> · 2026-05-29</div>
+      <div class="hero-version" data-i18n="hero_version">📦 内容截至 Claude Code <strong>v2.1.156</strong> · 2026-05-29</div>
     </div>
     <div class="hero-terminal">
       <div class="term-bar">
@@ -104,9 +105,9 @@
 
   <!-- ============================ 第一章 ============================ -->
   <section id="intro" class="section">
-    <div class="level-tag tag-newbie">🌱 小白级</div>
-    <h2>这是什么神器？</h2>
-    <p class="lead">
+    <div class="level-tag tag-newbie" data-i18n="lvl_newbie">🌱 小白级</div>
+    <h2 data-i18n="intro_h">这是什么神器？</h2>
+    <p class="lead" data-i18n="intro_lead">
       想象一下：你坐在终端前，用<strong>大白话</strong>说出想做的事——
       "帮我修这个 bug"、"给这个项目加个登录功能"、"解释下这段代码"——
       然后一个超级聪明的 AI 程序员真的读你的代码、写代码、跑测试、提交 PR。
@@ -116,148 +117,148 @@
     <div class="card-grid">
       <div class="feature-card">
         <div class="fc-icon">🧠</div>
-        <h3>它会读你的整个代码库</h3>
-        <p>不用你复制粘贴。它自己搜索文件、理解结构、找到相关代码，像一个刚入职但学得飞快的同事。</p>
+        <h3 data-i18n="intro_c1h">它会读你的整个代码库</h3>
+        <p data-i18n="intro_c1p">不用你复制粘贴。它自己搜索文件、理解结构、找到相关代码，像一个刚入职但学得飞快的同事。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">🛠️</div>
-        <h3>它真的会动手</h3>
-        <p>编辑文件、运行命令、跑测试、查 Git 历史、调用工具。不只是"建议"，而是真正帮你完成。</p>
+        <h3 data-i18n="intro_c2h">它真的会动手</h3>
+        <p data-i18n="intro_c2p">编辑文件、运行命令、跑测试、查 Git 历史、调用工具。不只是"建议"，而是真正帮你完成。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">💬</div>
-        <h3>就在你的终端里</h3>
-        <p>不用切换窗口、不用插件。也能在 VS Code / JetBrains、桌面 App、网页版（claude.ai/code）里用。</p>
+        <h3 data-i18n="intro_c3h">就在你的终端里</h3>
+        <p data-i18n="intro_c3p">不用切换窗口、不用插件。也能在 VS Code / JetBrains、桌面 App、网页版（claude.ai/code）里用。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">🤖</div>
-        <h3>可以无限定制</h3>
-        <p>斜杠命令、钩子、子代理、MCP……你能把它打造成专属于你团队工作流的智能体。</p>
+        <h3 data-i18n="intro_c4h">可以无限定制</h3>
+        <p data-i18n="intro_c4p">斜杠命令、钩子、子代理、MCP……你能把它打造成专属于你团队工作流的智能体。</p>
       </div>
     </div>
 
     <div class="callout callout-tip">
-      <div class="callout-title">💡 一句话理解</div>
-      Claude Code = 一个住在你终端里、能读能写能跑代码的 AI 结对程序员。你负责<strong>说想法</strong>，它负责<strong>把活干漂亮</strong>。
+      <div class="callout-title" data-i18n="intro_tip_t">💡 一句话理解</div>
+      <span data-i18n="intro_tip_b">Claude Code = 一个住在你终端里、能读能写能跑代码的 AI 结对程序员。你负责<strong>说想法</strong>，它负责<strong>把活干漂亮</strong>。</span>
     </div>
   </section>
 
   <section id="install" class="section">
-    <div class="level-tag tag-newbie">🌱 小白级</div>
-    <h2>五分钟安装启动</h2>
-    <p class="lead">三步上车。挑一种你喜欢的方式。</p>
+    <div class="level-tag tag-newbie" data-i18n="lvl_newbie">🌱 小白级</div>
+    <h2 data-i18n="install_h">五分钟安装启动</h2>
+    <p class="lead" data-i18n="install_lead">三步上车。挑一种你喜欢的方式。</p>
 
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-body">
-          <h3>安装</h3>
-          <p>最快的方式是用官方安装脚本（macOS / Linux）：</p>
-          <div class="code-block"><div class="code-head"><span>终端</span><button class="copy-btn">复制</button></div><pre><code>curl -fsSL https://claude.ai/install.sh | bash</code></pre></div>
-          <p>或者用 npm（需要 Node.js 18+）：</p>
-          <div class="code-block"><div class="code-head"><span>终端</span><button class="copy-btn">复制</button></div><pre><code>npm install -g @anthropic-ai/claude-code</code></pre></div>
+          <h3 data-i18n="install_s1h">安装</h3>
+          <p data-i18n="install_s1p1">最快的方式是用官方安装脚本（macOS / Linux）：</p>
+          <div class="code-block"><div class="code-head"><span data-i18n="ui_terminal">终端</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div><pre><code>curl -fsSL https://claude.ai/install.sh | bash</code></pre></div>
+          <p data-i18n="install_s1p2">或者用 npm（需要 Node.js 18+）：</p>
+          <div class="code-block"><div class="code-head"><span data-i18n="ui_terminal">终端</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div><pre><code>npm install -g @anthropic-ai/claude-code</code></pre></div>
         </div>
       </div>
 
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-body">
-          <h3>进入项目并启动</h3>
-          <p>切到你的项目目录，敲一个词：</p>
-          <div class="code-block"><div class="code-head"><span>终端</span><button class="copy-btn">复制</button></div><pre><code>cd my-project
+          <h3 data-i18n="install_s2h">进入项目并启动</h3>
+          <p data-i18n="install_s2p1">切到你的项目目录，敲一个词：</p>
+          <div class="code-block"><div class="code-head"><span data-i18n="ui_terminal">终端</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div><pre><code>cd my-project
 claude</code></pre></div>
-          <p>第一次运行会让你登录（浏览器授权或粘贴 API Key）。用 <span class="kbd">/login</span> 随时切换账号。</p>
+          <p data-i18n="install_s2p2">第一次运行会让你登录（浏览器授权或粘贴 API Key）。用 <span class="kbd">/login</span> 随时切换账号。</p>
         </div>
       </div>
 
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-body">
-          <h3>体检一下</h3>
-          <p>启动后输入 <span class="kbd">/doctor</span> 检查安装是否健康，再用 <span class="kbd">/help</span> 看看能干啥。搞定！</p>
-          <div class="code-block"><div class="code-head"><span>claude</span><button class="copy-btn">复制</button></div><pre><code>/doctor
+          <h3 data-i18n="install_s3h">体检一下</h3>
+          <p data-i18n="install_s3p1">启动后输入 <span class="kbd">/doctor</span> 检查安装是否健康，再用 <span class="kbd">/help</span> 看看能干啥。搞定！</p>
+          <div class="code-block"><div class="code-head"><span>claude</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div><pre><code>/doctor
 /help</code></pre></div>
         </div>
       </div>
     </div>
 
     <div class="callout callout-tip">
-      <div class="callout-title">💡 不想装也能玩</div>
-      打开 <strong>claude.ai/code</strong> 即可在网页里直接用 Claude Code，连接你的 GitHub 仓库，零安装上手。
+      <div class="callout-title" data-i18n="install_tip_t">💡 不想装也能玩</div>
+      <span data-i18n="install_tip_b">打开 <strong>claude.ai/code</strong> 即可在网页里直接用 Claude Code，连接你的 GitHub 仓库，零安装上手。</span>
     </div>
   </section>
 
   <section id="first-chat" class="section">
-    <div class="level-tag tag-newbie">🌱 小白级</div>
-    <h2>你的第一句对话</h2>
-    <p class="lead">别紧张，就像跟人聊天一样。下面是新手最常用的几句"咒语"。</p>
+    <div class="level-tag tag-newbie" data-i18n="lvl_newbie">🌱 小白级</div>
+    <h2 data-i18n="fc_h">你的第一句对话</h2>
+    <p class="lead" data-i18n="fc_lead">别紧张，就像跟人聊天一样。下面是新手最常用的几句"咒语"。</p>
 
     <div class="spell-grid">
-      <div class="spell"><div class="spell-q">「这个项目是做什么的？带我快速过一遍结构」</div><div class="spell-a">→ 它会探索代码库并给你一份导览</div></div>
-      <div class="spell"><div class="spell-q">「<code>src/auth.js</code> 里的登录逻辑有什么问题？」</div><div class="spell-a">→ 它会读文件、定位 bug、解释原因</div></div>
-      <div class="spell"><div class="spell-q">「帮我加一个深色模式切换按钮」</div><div class="spell-a">→ 它会改代码、可能还会跑测试验证</div></div>
-      <div class="spell"><div class="spell-q">「把刚才的改动提交，写个清晰的 commit message」</div><div class="spell-a">→ 它会 git add / commit（征得你同意后）</div></div>
+      <div class="spell"><div class="spell-q" data-i18n="fc_q1">「这个项目是做什么的？带我快速过一遍结构」</div><div class="spell-a" data-i18n="fc_a1">→ 它会探索代码库并给你一份导览</div></div>
+      <div class="spell"><div class="spell-q" data-i18n="fc_q2">「<code>src/auth.js</code> 里的登录逻辑有什么问题？」</div><div class="spell-a" data-i18n="fc_a2">→ 它会读文件、定位 bug、解释原因</div></div>
+      <div class="spell"><div class="spell-q" data-i18n="fc_q3">「帮我加一个深色模式切换按钮」</div><div class="spell-a" data-i18n="fc_a3">→ 它会改代码、可能还会跑测试验证</div></div>
+      <div class="spell"><div class="spell-q" data-i18n="fc_q4">「把刚才的改动提交，写个清晰的 commit message」</div><div class="spell-a" data-i18n="fc_a4">→ 它会 git add / commit（征得你同意后）</div></div>
     </div>
 
     <div class="callout callout-warn">
-      <div class="callout-title">⚠️ 三条黄金心法</div>
+      <div class="callout-title" data-i18n="fc_tip_t">⚠️ 三条黄金心法</div>
       <ul>
-        <li><strong>说清楚目标</strong>：与其说"优化代码"，不如说"把这个函数的循环改成 map，并加上类型注解"。</li>
-        <li><strong>大事拆小步</strong>：复杂任务先让它<em>做计划</em>（见 Plan 模式），再动手。</li>
-        <li><strong>你是船长</strong>：它每次危险操作前会问你；用 <span class="kbd">Esc</span> 随时打断、纠正方向。</li>
+        <li data-i18n="fc_tip_l1"><strong>说清楚目标</strong>：与其说"优化代码"，不如说"把这个函数的循环改成 map，并加上类型注解"。</li>
+        <li data-i18n="fc_tip_l2"><strong>大事拆小步</strong>：复杂任务先让它<em>做计划</em>（见 Plan 模式），再动手。</li>
+        <li data-i18n="fc_tip_l3"><strong>你是船长</strong>：它每次危险操作前会问你；用 <span class="kbd">Esc</span> 随时打断、纠正方向。</li>
       </ul>
     </div>
   </section>
 
   <!-- ============================ 第二章 ============================ -->
   <section id="concepts" class="section">
-    <div class="level-tag tag-pro">🚀 进阶级</div>
-    <h2>四大核心概念</h2>
-    <p class="lead">理解这四个词，你就从"会用"迈向"用好"。</p>
+    <div class="level-tag tag-pro" data-i18n="lvl_pro">🚀 进阶级</div>
+    <h2 data-i18n="con_h">四大核心概念</h2>
+    <p class="lead" data-i18n="con_lead">理解这四个词，你就从"会用"迈向"用好"。</p>
 
     <div class="concept-list">
       <div class="concept">
         <div class="concept-icon">📜</div>
         <div>
-          <h3>上下文（Context）</h3>
-          <p>Claude "记得"的对话内容是有容量的。对话太长它会自动<strong>压缩</strong>（compact）。用 <span class="kbd">/context</span> 查看占用，用 <span class="kbd">/clear</span> 开新局，保持它"脑子清醒"。</p>
+          <h3 data-i18n="con_1h">上下文（Context）</h3>
+          <p data-i18n="con_1p">Claude "记得"的对话内容是有容量的。对话太长它会自动<strong>压缩</strong>（compact）。用 <span class="kbd">/context</span> 查看占用，用 <span class="kbd">/clear</span> 开新局，保持它"脑子清醒"。</p>
         </div>
       </div>
       <div class="concept">
         <div class="concept-icon">🧩</div>
         <div>
-          <h3>工具（Tools）</h3>
-          <p>读文件、写文件、跑 bash、搜索代码……都是"工具"。它会自主选择用哪个。权限模式决定哪些工具需要你点头同意。</p>
+          <h3 data-i18n="con_2h">工具（Tools）</h3>
+          <p data-i18n="con_2p">读文件、写文件、跑 bash、搜索代码……都是"工具"。它会自主选择用哪个。权限模式决定哪些工具需要你点头同意。</p>
         </div>
       </div>
       <div class="concept">
         <div class="concept-icon">🧠</div>
         <div>
-          <h3>记忆（CLAUDE.md）</h3>
-          <p>项目根目录的 <code>CLAUDE.md</code> 是它的"常驻记忆"——你的编码规范、架构说明、常用命令都写在这。每次都会自动加载。</p>
+          <h3 data-i18n="con_3h">记忆（CLAUDE.md）</h3>
+          <p data-i18n="con_3p">项目根目录的 <code>CLAUDE.md</code> 是它的"常驻记忆"——你的编码规范、架构说明、常用命令都写在这。每次都会自动加载。</p>
         </div>
       </div>
       <div class="concept">
         <div class="concept-icon">🔐</div>
         <div>
-          <h3>权限模式（Permissions）</h3>
-          <p>从"每步都问"到"自动放行"。用 <span class="kbd">/permissions</span> 配置，或启动时加 <code>--permission-mode</code>。安全与效率的平衡阀。</p>
+          <h3 data-i18n="con_4h">权限模式（Permissions）</h3>
+          <p data-i18n="con_4p">从"每步都问"到"自动放行"。用 <span class="kbd">/permissions</span> 配置，或启动时加 <code>--permission-mode</code>。安全与效率的平衡阀。</p>
         </div>
       </div>
     </div>
   </section>
 
   <section id="claudemd" class="section">
-    <div class="level-tag tag-pro">🚀 进阶级</div>
-    <h2>CLAUDE.md：项目的大脑</h2>
-    <p class="lead">
+    <div class="level-tag tag-pro" data-i18n="lvl_pro">🚀 进阶级</div>
+    <h2 data-i18n="cmd_h">CLAUDE.md：项目的大脑</h2>
+    <p class="lead" data-i18n="cmd_lead">
       这是<strong>最能提升效果</strong>的一招。一个好的 <code>CLAUDE.md</code> 能让 Claude 立刻"懂你的项目"，少走弯路。
       用 <span class="kbd">/init</span> 可以一键自动生成初版。
     </p>
 
     <div class="code-block">
-      <div class="code-head"><span>CLAUDE.md</span><button class="copy-btn">复制</button></div>
-<pre><code># 项目：电商后台
+      <div class="code-head"><span>CLAUDE.md</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div>
+<pre><code data-i18n="cmd_sample"># 项目：电商后台
 
 ## 技术栈
 - Next.js 14 (App Router) + TypeScript
@@ -280,124 +281,124 @@ claude</code></pre></div>
     </div>
 
     <div class="callout callout-tip">
-      <div class="callout-title">💡 三级记忆</div>
+      <div class="callout-title" data-i18n="cmd_tip_t">💡 三级记忆</div>
       <ul>
-        <li><code>./CLAUDE.md</code> — 项目级，团队共享（提交进 Git）</li>
-        <li><code>./CLAUDE.local.md</code> — 个人本地（写进 .gitignore）</li>
-        <li><code>~/.claude/CLAUDE.md</code> — 全局，所有项目生效</li>
+        <li data-i18n="cmd_tip_l1"><code>./CLAUDE.md</code> — 项目级，团队共享（提交进 Git）</li>
+        <li data-i18n="cmd_tip_l2"><code>./CLAUDE.local.md</code> — 个人本地（写进 .gitignore）</li>
+        <li data-i18n="cmd_tip_l3"><code>~/.claude/CLAUDE.md</code> — 全局，所有项目生效</li>
       </ul>
-      随时用 <span class="kbd">/memory</span> 编辑，或在对话里用 <span class="kbd">#</span> 开头快速追加一条记忆。
+      <span data-i18n="cmd_tip_b">随时用 <span class="kbd">/memory</span> 编辑，或在对话里用 <span class="kbd">#</span> 开头快速追加一条记忆。</span>
     </div>
   </section>
 
   <section id="workflow" class="section">
-    <div class="level-tag tag-pro">🚀 进阶级</div>
-    <h2>高效工作流</h2>
-    <p class="lead">同样的工具，高手用起来快 10 倍。秘诀在节奏。</p>
+    <div class="level-tag tag-pro" data-i18n="lvl_pro">🚀 进阶级</div>
+    <h2 data-i18n="wf_h">高效工作流</h2>
+    <p class="lead" data-i18n="wf_lead">同样的工具，高手用起来快 10 倍。秘诀在节奏。</p>
 
     <div class="workflow-flow">
-      <div class="wf-step"><span class="wf-badge">1</span><strong>探索</strong><br>先让它读懂相关代码，别急着改</div>
+      <div class="wf-step"><span class="wf-badge">1</span><strong data-i18n="wf_s1t">探索</strong><br><span data-i18n="wf_s1d">先让它读懂相关代码，别急着改</span></div>
       <div class="wf-arrow">→</div>
-      <div class="wf-step"><span class="wf-badge">2</span><strong>计划</strong><br>用 Plan 模式产出方案，你审一遍</div>
+      <div class="wf-step"><span class="wf-badge">2</span><strong data-i18n="wf_s2t">计划</strong><br><span data-i18n="wf_s2d">用 Plan 模式产出方案，你审一遍</span></div>
       <div class="wf-arrow">→</div>
-      <div class="wf-step"><span class="wf-badge">3</span><strong>执行</strong><br>批准后让它动手实现</div>
+      <div class="wf-step"><span class="wf-badge">3</span><strong data-i18n="wf_s3t">执行</strong><br><span data-i18n="wf_s3d">批准后让它动手实现</span></div>
       <div class="wf-arrow">→</div>
-      <div class="wf-step"><span class="wf-badge">4</span><strong>验证</strong><br>跑测试、跑应用、看效果</div>
+      <div class="wf-step"><span class="wf-badge">4</span><strong data-i18n="wf_s4t">验证</strong><br><span data-i18n="wf_s4d">跑测试、跑应用、看效果</span></div>
       <div class="wf-arrow">→</div>
-      <div class="wf-step"><span class="wf-badge">5</span><strong>提交</strong><br>清晰的 commit，必要时开 PR</div>
+      <div class="wf-step"><span class="wf-badge">5</span><strong data-i18n="wf_s5t">提交</strong><br><span data-i18n="wf_s5d">清晰的 commit，必要时开 PR</span></div>
     </div>
 
     <div class="card-grid">
       <div class="feature-card">
         <div class="fc-icon">🗺️</div>
-        <h3>Plan 模式</h3>
-        <p>按 <span class="kbd">Shift</span>+<span class="kbd">Tab</span> 切换到"只规划不动手"模式。让它先给出步骤方案，你点头后再执行——复杂任务的救命稻草。</p>
+        <h3 data-i18n="wf_c1h">Plan 模式</h3>
+        <p data-i18n="wf_c1p">按 <span class="kbd">Shift</span>+<span class="kbd">Tab</span> 切换到"只规划不动手"模式。让它先给出步骤方案，你点头后再执行——复杂任务的救命稻草。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">⏪</div>
-        <h3>后悔药</h3>
-        <p>改坏了？用 <span class="kbd">/rewind</span> 回退到之前的对话/代码检查点。<span class="kbd">Esc</span> 两下可编辑历史消息、重开分支。</p>
+        <h3 data-i18n="wf_c2h">后悔药</h3>
+        <p data-i18n="wf_c2p">改坏了？用 <span class="kbd">/rewind</span> 回退到之前的对话/代码检查点。<span class="kbd">Esc</span> 两下可编辑历史消息、重开分支。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">🧹</div>
-        <h3>勤清上下文</h3>
-        <p>切换到不相关的新任务时，先 <span class="kbd">/clear</span>。上下文干净 = 回答更准、更省钱。</p>
+        <h3 data-i18n="wf_c3h">勤清上下文</h3>
+        <p data-i18n="wf_c3p">切换到不相关的新任务时，先 <span class="kbd">/clear</span>。上下文干净 = 回答更准、更省钱。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">🖼️</div>
-        <h3>贴图与拖文件</h3>
-        <p>直接把截图粘进终端，或拖入文件路径。报错截图、设计稿、日志——它都能看。</p>
+        <h3 data-i18n="wf_c4h">贴图与拖文件</h3>
+        <p data-i18n="wf_c4p">直接把截图粘进终端，或拖入文件路径。报错截图、设计稿、日志——它都能看。</p>
       </div>
     </div>
   </section>
 
   <!-- ============================ 第三章 · 斜杠命令 ============================ -->
   <section id="slash-intro" class="section">
-    <div class="level-tag tag-pro">⚡ 核心</div>
-    <h2>斜杠命令是什么？</h2>
-    <p class="lead">
+    <div class="level-tag tag-pro" data-i18n="lvl_core">⚡ 核心</div>
+    <h2 data-i18n="si_h">斜杠命令是什么？</h2>
+    <p class="lead" data-i18n="si_lead">
       在输入框开头敲一个 <span class="kbd">/</span>，就会弹出一串命令菜单。它们是 Claude Code 的"快捷指令"——
       管理会话、配置、Git、记忆、子代理……<strong>玩转斜杠命令，就掌握了 Claude Code 的方向盘</strong>。
     </p>
     <div class="callout callout-tip">
-      <div class="callout-title">💡 怎么用</div>
-      输入 <span class="kbd">/</span> 后开始打字会<strong>模糊匹配</strong>命令名，按 <span class="kbd">Tab</span> 或回车选中。不确定有哪些？直接 <span class="kbd">/help</span>。
+      <div class="callout-title" data-i18n="si_tip_t">💡 怎么用</div>
+      <span data-i18n="si_tip_b">输入 <span class="kbd">/</span> 后开始打字会<strong>模糊匹配</strong>命令名，按 <span class="kbd">Tab</span> 或回车选中。不确定有哪些？直接 <span class="kbd">/help</span>。</span>
     </div>
 
     <div class="callout callout-warn">
-      <div class="callout-title">⚠️ 别踩坑：<code>ultrathink</code> 不是斜杠命令</div>
-      <p style="margin:0 0 8px"><code>ultrathink</code> 是你在<strong>对话里直接输入的"思考强度"关键词</strong>——在提示中任意位置写上它，就能让 Claude 这一轮想得更深，但<strong>不会</strong>改变会话设置。注意 <code>think</code> / <code>think hard</code> 这类普通短语<strong>不被识别为关键词</strong>，只会当普通文字。</p>
-      <p style="margin:0">想<strong>永久</strong>调思考强度，用斜杠命令 <span class="kbd">/effort</span>（<code>low/medium/high/xhigh/max/ultracode</code>）。另外确实存在带 "ultra" 的命令：<span class="kbd">/ultraplan</span>（深度规划）、<span class="kbd">/ultrareview</span>（深度代码审查）。</p>
+      <div class="callout-title" data-i18n="si_warn_t">⚠️ 别踩坑：<code>ultrathink</code> 不是斜杠命令</div>
+      <p style="margin:0 0 8px" data-i18n="si_warn_p1"><code>ultrathink</code> 是你在<strong>对话里直接输入的"思考强度"关键词</strong>——在提示中任意位置写上它，就能让 Claude 这一轮想得更深，但<strong>不会</strong>改变会话设置。注意 <code>think</code> / <code>think hard</code> 这类普通短语<strong>不被识别为关键词</strong>，只会当普通文字。</p>
+      <p style="margin:0" data-i18n="si_warn_p2">想<strong>永久</strong>调思考强度，用斜杠命令 <span class="kbd">/effort</span>（<code>low/medium/high/xhigh/max/ultracode</code>）。另外确实存在带 "ultra" 的命令：<span class="kbd">/ultraplan</span>（深度规划）、<span class="kbd">/ultrareview</span>（深度代码审查）。</p>
     </div>
   </section>
 
   <section id="slash-all" class="section">
-    <div class="level-tag tag-pro">⚡ 核心</div>
-    <h2>全部斜杠命令速查表</h2>
-    <p class="lead">这是本教程的"宝典"。在搜索框输入关键词实时过滤，点任意卡片复制命令。</p>
+    <div class="level-tag tag-pro" data-i18n="lvl_core">⚡ 核心</div>
+    <h2 data-i18n="sa_h">全部斜杠命令速查表</h2>
+    <p class="lead" data-i18n="sa_lead">这是本教程的"宝典"。在搜索框输入关键词实时过滤，点任意卡片复制命令。</p>
 
-    <div class="ver-banner">
+    <div class="ver-banner" data-i18n="sa_ver">
       📦 截至 Claude Code <strong>v2.1.156</strong>（2026-05-29）整理 ·
       命令会随版本增删，<strong>以你本机的 <span class="kbd">/help</span> 输出为最终准</strong>
     </div>
 
     <div class="legend">
-      <span class="cmd-type t-builtin">内置</span>原生命令
-      <span class="cmd-type t-skill">技能</span>可被自动/手动触发的 Skill
-      <span class="cmd-type t-flow">工作流</span>并行长流程
-      <span class="cmd-type t-removed">已移除</span>旧版本已删除
+      <span class="cmd-type t-builtin" data-i18n="type_builtin">内置</span><span data-i18n="legend_builtin">原生命令</span>
+      <span class="cmd-type t-skill" data-i18n="type_skill">技能</span><span data-i18n="legend_skill">可被自动/手动触发的 Skill</span>
+      <span class="cmd-type t-flow" data-i18n="type_flow">工作流</span><span data-i18n="legend_flow">并行长流程</span>
+      <span class="cmd-type t-removed" data-i18n="type_removed">已移除</span><span data-i18n="legend_removed">旧版本已删除</span>
     </div>
 
     <div class="cmd-search-wrap">
-      <input type="text" id="cmd-search" placeholder="🔍 搜索命令，例如：plan、记忆、mcp、审查、effort、技能…">
+      <input type="text" id="cmd-search" placeholder="🔍 搜索命令，例如：plan、记忆、mcp、审查、effort、技能…" data-i18n-placeholder="search_ph">
       <div class="cmd-filters" id="cmd-filters">
-        <button class="filter-btn active" data-cat="all">全部</button>
-        <button class="filter-btn" data-cat="会话">会话</button>
-        <button class="filter-btn" data-cat="配置">配置外观</button>
-        <button class="filter-btn" data-cat="代码">代码审查</button>
-        <button class="filter-btn" data-cat="扩展">扩展能力</button>
-        <button class="filter-btn" data-cat="跨端">跨端平台</button>
-        <button class="filter-btn" data-cat="信息">信息诊断</button>
-        <button class="filter-btn" data-cat="其他">趣味周边</button>
+        <button class="filter-btn active" data-cat="all" data-i18n="filter_all">全部</button>
+        <button class="filter-btn" data-cat="会话" data-i18n="filter_session">会话</button>
+        <button class="filter-btn" data-cat="配置" data-i18n="filter_config">配置外观</button>
+        <button class="filter-btn" data-cat="代码" data-i18n="filter_code">代码审查</button>
+        <button class="filter-btn" data-cat="扩展" data-i18n="filter_ext">扩展能力</button>
+        <button class="filter-btn" data-cat="跨端" data-i18n="filter_platform">跨端平台</button>
+        <button class="filter-btn" data-cat="信息" data-i18n="filter_info">信息诊断</button>
+        <button class="filter-btn" data-cat="其他" data-i18n="filter_fun">趣味周边</button>
       </div>
       <div class="cmd-count" id="cmd-count"></div>
     </div>
 
     <div class="cmd-grid" id="cmd-grid"><!-- JS 注入 --></div>
-    <div id="cmd-empty" class="cmd-empty" hidden>没有匹配的命令，换个关键词试试 🤔</div>
+    <div id="cmd-empty" class="cmd-empty" hidden data-i18n="cmd_empty">没有匹配的命令，换个关键词试试 🤔</div>
   </section>
 
   <section id="slash-custom" class="section">
-    <div class="level-tag tag-god">🧙 大神级</div>
-    <h2>自定义你的斜杠命令</h2>
-    <p class="lead">
+    <div class="level-tag tag-god" data-i18n="lvl_god">🧙 大神级</div>
+    <h2 data-i18n="sc_h">自定义你的斜杠命令</h2>
+    <p class="lead" data-i18n="sc_lead">
       内置命令不够用？自己造！在 <code>.claude/commands/</code> 放一个 Markdown 文件，文件名就是命令名。
       这是把团队"套路"固化成一键操作的杀手锏。
     </p>
 
     <div class="code-block">
-      <div class="code-head"><span>.claude/commands/review-pr.md</span><button class="copy-btn">复制</button></div>
-<pre><code>---
+      <div class="code-head"><span>.claude/commands/review-pr.md</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div>
+<pre><code data-i18n="sc_sample">---
 description: 审查当前分支的改动并给出修改建议
 argument-hint: [关注点，可选]
 allowed-tools: Bash(git*), Read, Grep
@@ -412,30 +413,30 @@ allowed-tools: Bash(git*), Read, Grep
 </code></pre>
     </div>
 
-    <p>之后在对话里输入 <span class="kbd">/review-pr 性能</span> 即可触发，<code>$ARGUMENTS</code> 会被替换成 "性能"。</p>
+    <p data-i18n="sc_after">之后在对话里输入 <span class="kbd">/review-pr 性能</span> 即可触发，<code>$ARGUMENTS</code> 会被替换成 "性能"。</p>
 
     <div class="callout callout-tip">
-      <div class="callout-title">💡 进阶技巧</div>
+      <div class="callout-title" data-i18n="sc_tip_t">💡 进阶技巧</div>
       <ul>
-        <li>放在 <code>~/.claude/commands/</code> 则是<strong>全局命令</strong>，所有项目可用。</li>
-        <li>用子目录可以创建<strong>命名空间</strong>，如 <code>.claude/commands/git/sync.md</code> → <span class="kbd">/git:sync</span>。</li>
-        <li>正文里可用 <code>!`命令`</code> 嵌入 shell 输出，用 <code>@文件</code> 引用文件内容。</li>
-        <li>用 <span class="kbd">/agents</span> 和 <span class="kbd">/hooks</span> 可进一步把命令、子代理、钩子串成自动化流水线。</li>
+        <li data-i18n="sc_tip_l1">放在 <code>~/.claude/commands/</code> 则是<strong>全局命令</strong>，所有项目可用。</li>
+        <li data-i18n="sc_tip_l2">用子目录可以创建<strong>命名空间</strong>，如 <code>.claude/commands/git/sync.md</code> → <span class="kbd">/git:sync</span>。</li>
+        <li data-i18n="sc_tip_l3">正文里可用 <code>!`命令`</code> 嵌入 shell 输出，用 <code>@文件</code> 引用文件内容。</li>
+        <li data-i18n="sc_tip_l4">用 <span class="kbd">/agents</span> 和 <span class="kbd">/hooks</span> 可进一步把命令、子代理、钩子串成自动化流水线。</li>
       </ul>
     </div>
   </section>
 
   <!-- ============================ 第四章 · 大神之路 ============================ -->
   <section id="hooks" class="section">
-    <div class="level-tag tag-god">🧙 大神级</div>
-    <h2>钩子 Hooks：让它自动养成好习惯</h2>
-    <p class="lead">
+    <div class="level-tag tag-god" data-i18n="lvl_god">🧙 大神级</div>
+    <h2 data-i18n="hk_h">钩子 Hooks：让它自动养成好习惯</h2>
+    <p class="lead" data-i18n="hk_lead">
       钩子是在特定时机<strong>自动执行的脚本</strong>。比如"每次编辑完文件就自动跑格式化"、"提交前自动跑测试"。
       由 Claude Code 的引擎执行，而不是靠 Claude 自觉——所以 100% 可靠。
     </p>
-    <p>用 <span class="kbd">/hooks</span> 交互式配置，或写进 <code>.claude/settings.json</code>：</p>
+    <p data-i18n="hk_p2">用 <span class="kbd">/hooks</span> 交互式配置，或写进 <code>.claude/settings.json</code>：</p>
     <div class="code-block">
-      <div class="code-head"><span>.claude/settings.json</span><button class="copy-btn">复制</button></div>
+      <div class="code-head"><span>.claude/settings.json</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div>
 <pre><code>{
   "hooks": {
     "PostToolUse": [
@@ -450,122 +451,122 @@ allowed-tools: Bash(git*), Read, Grep
 }</code></pre>
     </div>
     <div class="callout callout-tip">
-      <div class="callout-title">💡 常见钩子时机</div>
-      <code>PreToolUse</code>（工具调用前，可拦截）、<code>PostToolUse</code>（调用后）、<code>UserPromptSubmit</code>（你发消息时）、<code>Stop</code>（回答结束时）、<code>SessionStart</code>（会话开始，适合装依赖）。
+      <div class="callout-title" data-i18n="hk_tip_t">💡 常见钩子时机</div>
+      <span data-i18n="hk_tip_b"><code>PreToolUse</code>（工具调用前，可拦截）、<code>PostToolUse</code>（调用后）、<code>UserPromptSubmit</code>（你发消息时）、<code>Stop</code>（回答结束时）、<code>SessionStart</code>（会话开始，适合装依赖）。</span>
     </div>
   </section>
 
   <section id="mcp" class="section">
-    <div class="level-tag tag-god">🧙 大神级</div>
-    <h2>MCP：给 Claude 接上外部世界</h2>
-    <p class="lead">
+    <div class="level-tag tag-god" data-i18n="lvl_god">🧙 大神级</div>
+    <h2 data-i18n="mcp_h">MCP：给 Claude 接上外部世界</h2>
+    <p class="lead" data-i18n="mcp_lead">
       MCP（Model Context Protocol）是一套标准接口，让 Claude Code 连接<strong>外部工具和数据源</strong>——
       GitHub、数据库、Slack、Figma、浏览器自动化……瞬间多出一堆新工具。
     </p>
     <div class="code-block">
-      <div class="code-head"><span>终端 / 添加一个 MCP 服务器</span><button class="copy-btn">复制</button></div>
-<pre><code># 添加一个本地 MCP 服务器
+      <div class="code-head"><span data-i18n="mcp_codehead">终端 / 添加一个 MCP 服务器</span><button class="copy-btn" data-i18n="ui_copy">复制</button></div>
+<pre><code data-i18n="mcp_sample"># 添加一个本地 MCP 服务器
 claude mcp add my-server -- npx -y @some/mcp-server
 
 # 在会话内查看 / 管理已连接的服务器
 /mcp</code></pre>
     </div>
     <div class="callout callout-tip">
-      <div class="callout-title">💡 用 /mcp 干什么</div>
-      查看已连接服务器、它们提供的工具、认证状态（OAuth 登录），以及临时启用/禁用某个服务器。MCP 工具通常名为 <code>mcp__服务器名__工具名</code>。
+      <div class="callout-title" data-i18n="mcp_tip_t">💡 用 /mcp 干什么</div>
+      <span data-i18n="mcp_tip_b">查看已连接服务器、它们提供的工具、认证状态（OAuth 登录），以及临时启用/禁用某个服务器。MCP 工具通常名为 <code>mcp__服务器名__工具名</code>。</span>
     </div>
   </section>
 
   <section id="subagents" class="section">
-    <div class="level-tag tag-god">🧙 大神级</div>
-    <h2>子代理军团：一个人指挥一支队伍</h2>
-    <p class="lead">
+    <div class="level-tag tag-god" data-i18n="lvl_god">🧙 大神级</div>
+    <h2 data-i18n="sub_h">子代理军团：一个人指挥一支队伍</h2>
+    <p class="lead" data-i18n="sub_lead">
       子代理（Subagents）是<strong>拥有独立上下文的专职 AI</strong>。你可以让一个"探索代理"去翻遍代码库、
       让一个"测试代理"去跑验证，主对话保持干净。这是大神级并行作战的核心。
     </p>
-    <p>用 <span class="kbd">/agents</span> 创建和管理子代理。每个子代理有自己的系统提示、可用工具和模型。</p>
+    <p data-i18n="sub_p2">用 <span class="kbd">/agents</span> 创建和管理子代理。每个子代理有自己的系统提示、可用工具和模型。</p>
 
     <div class="card-grid">
       <div class="feature-card">
         <div class="fc-icon">🔭</div>
-        <h3>探索代理</h3>
-        <p>专门做大范围代码搜索，只把结论带回来，不污染主上下文。</p>
+        <h3 data-i18n="sub_c1h">探索代理</h3>
+        <p data-i18n="sub_c1p">专门做大范围代码搜索，只把结论带回来，不污染主上下文。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">📐</div>
-        <h3>架构代理</h3>
-        <p>专门设计实现方案，权衡取舍，输出分步计划。</p>
+        <h3 data-i18n="sub_c2h">架构代理</h3>
+        <p data-i18n="sub_c2p">专门设计实现方案，权衡取舍，输出分步计划。</p>
       </div>
       <div class="feature-card">
         <div class="fc-icon">🔍</div>
-        <h3>审查代理</h3>
-        <p>专门 review 代码，揪 bug、提简化建议。</p>
+        <h3 data-i18n="sub_c3h">审查代理</h3>
+        <p data-i18n="sub_c3p">专门 review 代码，揪 bug、提简化建议。</p>
       </div>
     </div>
     <div class="callout callout-tip">
-      <div class="callout-title">💡 并行加速</div>
-      多个互不依赖的子代理可以<strong>同时</strong>跑。把一个大任务拆给几个代理并行处理，总时长大幅缩短。
+      <div class="callout-title" data-i18n="sub_tip_t">💡 并行加速</div>
+      <span data-i18n="sub_tip_b">多个互不依赖的子代理可以<strong>同时</strong>跑。把一个大任务拆给几个代理并行处理，总时长大幅缩短。</span>
     </div>
   </section>
 
   <section id="pro-tips" class="section">
-    <div class="level-tag tag-god">🧙 大神级</div>
-    <h2>大神十二诀</h2>
-    <p class="lead">把这些刻进肌肉记忆，你就是团队里那个"Claude Code 用得最骚"的人。</p>
+    <div class="level-tag tag-god" data-i18n="lvl_god">🧙 大神级</div>
+    <h2 data-i18n="pt_h">大神十二诀</h2>
+    <p class="lead" data-i18n="pt_lead">把这些刻进肌肉记忆，你就是团队里那个"Claude Code 用得最骚"的人。</p>
 
     <div class="tips-grid">
-      <div class="tip-card"><span class="tip-n">01</span><p><strong>先计划再动手。</strong>复杂任务永远先用 Plan 模式产出方案。</p></div>
-      <div class="tip-card"><span class="tip-n">02</span><p><strong>CLAUDE.md 是 1 号优先级。</strong>把规范写进去，胜过反复叮嘱。</p></div>
-      <div class="tip-card"><span class="tip-n">03</span><p><strong>勤用 /clear。</strong>换任务就清场，准确率与省钱双赢。</p></div>
-      <div class="tip-card"><span class="tip-n">04</span><p><strong>把套路做成斜杠命令。</strong>重复三次的操作就该自动化。</p></div>
-      <div class="tip-card"><span class="tip-n">05</span><p><strong>用钩子守底线。</strong>格式化、测试、lint 交给钩子自动跑。</p></div>
-      <div class="tip-card"><span class="tip-n">06</span><p><strong>子代理做脏活。</strong>大搜索、长验证丢给子代理，主线保持清爽。</p></div>
-      <div class="tip-card"><span class="tip-n">07</span><p><strong>给它"看"的能力。</strong>贴报错截图、贴日志、贴设计稿。</p></div>
-      <div class="tip-card"><span class="tip-n">08</span><p><strong>Esc 是你的方向盘。</strong>跑偏立刻打断，别等它跑完。</p></div>
-      <div class="tip-card"><span class="tip-n">09</span><p><strong>/rewind 不怕翻车。</strong>大胆尝试，随时回到检查点。</p></div>
-      <div class="tip-card"><span class="tip-n">10</span><p><strong>盯住 /context 和 /cost。</strong>知道脑容量和花费，心里有数。</p></div>
-      <div class="tip-card"><span class="tip-n">11</span><p><strong>接 MCP 扩展边界。</strong>让它直连你的真实工具与数据。</p></div>
-      <div class="tip-card"><span class="tip-n">12</span><p><strong>小步快跑、频繁提交。</strong>每个小成果都 commit，方便回溯。</p></div>
+      <div class="tip-card"><span class="tip-n">01</span><p data-i18n="pt_1"><strong>先计划再动手。</strong>复杂任务永远先用 Plan 模式产出方案。</p></div>
+      <div class="tip-card"><span class="tip-n">02</span><p data-i18n="pt_2"><strong>CLAUDE.md 是 1 号优先级。</strong>把规范写进去，胜过反复叮嘱。</p></div>
+      <div class="tip-card"><span class="tip-n">03</span><p data-i18n="pt_3"><strong>勤用 /clear。</strong>换任务就清场，准确率与省钱双赢。</p></div>
+      <div class="tip-card"><span class="tip-n">04</span><p data-i18n="pt_4"><strong>把套路做成斜杠命令。</strong>重复三次的操作就该自动化。</p></div>
+      <div class="tip-card"><span class="tip-n">05</span><p data-i18n="pt_5"><strong>用钩子守底线。</strong>格式化、测试、lint 交给钩子自动跑。</p></div>
+      <div class="tip-card"><span class="tip-n">06</span><p data-i18n="pt_6"><strong>子代理做脏活。</strong>大搜索、长验证丢给子代理，主线保持清爽。</p></div>
+      <div class="tip-card"><span class="tip-n">07</span><p data-i18n="pt_7"><strong>给它"看"的能力。</strong>贴报错截图、贴日志、贴设计稿。</p></div>
+      <div class="tip-card"><span class="tip-n">08</span><p data-i18n="pt_8"><strong>Esc 是你的方向盘。</strong>跑偏立刻打断，别等它跑完。</p></div>
+      <div class="tip-card"><span class="tip-n">09</span><p data-i18n="pt_9"><strong>/rewind 不怕翻车。</strong>大胆尝试，随时回到检查点。</p></div>
+      <div class="tip-card"><span class="tip-n">10</span><p data-i18n="pt_10"><strong>盯住 /context 和 /cost。</strong>知道脑容量和花费，心里有数。</p></div>
+      <div class="tip-card"><span class="tip-n">11</span><p data-i18n="pt_11"><strong>接 MCP 扩展边界。</strong>让它直连你的真实工具与数据。</p></div>
+      <div class="tip-card"><span class="tip-n">12</span><p data-i18n="pt_12"><strong>小步快跑、频繁提交。</strong>每个小成果都 commit，方便回溯。</p></div>
     </div>
   </section>
 
   <!-- ============================ 附录 ============================ -->
   <section id="cheatsheet" class="section">
-    <div class="level-tag tag-pro">🎯 附录</div>
-    <h2>键盘快捷键速查</h2>
+    <div class="level-tag tag-pro" data-i18n="lvl_appendix">🎯 附录</div>
+    <h2 data-i18n="ks_h">键盘快捷键速查</h2>
     <div class="kbd-grid">
-      <div class="kbd-row"><span class="kbd">Esc</span><span>打断 Claude / 停止当前操作</span></div>
-      <div class="kbd-row"><span class="kbd">Esc</span> <span class="kbd">Esc</span><span>编辑上一条消息、回退对话</span></div>
-      <div class="kbd-row"><span class="kbd">Shift</span>+<span class="kbd">Tab</span><span>切换权限/规划模式（含 Plan 模式）</span></div>
-      <div class="kbd-row"><span class="kbd">/</span><span>呼出斜杠命令菜单</span></div>
-      <div class="kbd-row"><span class="kbd">@</span><span>引用文件 / 目录</span></div>
-      <div class="kbd-row"><span class="kbd">#</span><span>快速追加一条记忆到 CLAUDE.md</span></div>
-      <div class="kbd-row"><span class="kbd">!</span><span>进入 bash 模式，直接跑 shell 命令</span></div>
-      <div class="kbd-row"><span class="kbd">Ctrl</span>+<span class="kbd">C</span><span>取消输入 / 退出</span></div>
-      <div class="kbd-row"><span class="kbd">↑</span> <span class="kbd">↓</span><span>翻历史输入</span></div>
-      <div class="kbd-row"><span class="kbd">Ctrl</span>+<span class="kbd">R</span><span>展开/收起详细输出</span></div>
+      <div class="kbd-row"><span class="kbd">Esc</span><span data-i18n="ks_1">打断 Claude / 停止当前操作</span></div>
+      <div class="kbd-row"><span class="kbd">Esc</span> <span class="kbd">Esc</span><span data-i18n="ks_2">编辑上一条消息、回退对话</span></div>
+      <div class="kbd-row"><span class="kbd">Shift</span>+<span class="kbd">Tab</span><span data-i18n="ks_3">切换权限/规划模式（含 Plan 模式）</span></div>
+      <div class="kbd-row"><span class="kbd">/</span><span data-i18n="ks_4">呼出斜杠命令菜单</span></div>
+      <div class="kbd-row"><span class="kbd">@</span><span data-i18n="ks_5">引用文件 / 目录</span></div>
+      <div class="kbd-row"><span class="kbd">#</span><span data-i18n="ks_6">快速追加一条记忆到 CLAUDE.md</span></div>
+      <div class="kbd-row"><span class="kbd">!</span><span data-i18n="ks_7">进入 bash 模式，直接跑 shell 命令</span></div>
+      <div class="kbd-row"><span class="kbd">Ctrl</span>+<span class="kbd">C</span><span data-i18n="ks_8">取消输入 / 退出</span></div>
+      <div class="kbd-row"><span class="kbd">↑</span> <span class="kbd">↓</span><span data-i18n="ks_9">翻历史输入</span></div>
+      <div class="kbd-row"><span class="kbd">Ctrl</span>+<span class="kbd">R</span><span data-i18n="ks_10">展开/收起详细输出</span></div>
     </div>
   </section>
 
   <section id="faq" class="section">
-    <div class="level-tag tag-pro">🎯 附录</div>
-    <h2>常见问题</h2>
+    <div class="level-tag tag-pro" data-i18n="lvl_appendix">🎯 附录</div>
+    <h2 data-i18n="faq_h">常见问题</h2>
     <div class="faq">
-      <details><summary>Claude Code 收费吗？</summary><p>需要 Anthropic 账户（Claude 订阅或 API 额度）。用 <span class="kbd">/cost</span> 看本次会话花费，用 <span class="kbd">/usage</span> 看用量。</p></details>
-      <details><summary>它会偷偷改我的代码或删文件吗？</summary><p>默认情况下，写文件、跑命令等"危险"操作都会先征求你同意。权限模式可调，但你始终是船长。删除/覆盖前它会先确认。</p></details>
-      <details><summary>对话太长变慢/变笨怎么办？</summary><p>用 <span class="kbd">/compact</span> 压缩，或 <span class="kbd">/clear</span> 开新局。换任务务必清场。</p></details>
-      <details><summary>能离开终端用吗？</summary><p>能。VS Code / JetBrains 插件、桌面 App（Mac/Win）、网页版 claude.ai/code 都可以。</p></details>
-      <details><summary>怎么报 bug 或给反馈？</summary><p>会话里输入 <span class="kbd">/bug</span> 或 <span class="kbd">/feedback</span>，直接把问题反馈给团队。</p></details>
-      <details><summary>我用的是哪个模型？怎么换？</summary><p>用 <span class="kbd">/model</span> 切换（如 Opus / Sonnet / Haiku）。最强是 Claude 4.X 系列。</p></details>
+      <details><summary data-i18n="faq_q1">Claude Code 收费吗？</summary><p data-i18n="faq_a1">需要 Anthropic 账户（Claude 订阅或 API 额度）。用 <span class="kbd">/cost</span> 看本次会话花费，用 <span class="kbd">/usage</span> 看用量。</p></details>
+      <details><summary data-i18n="faq_q2">它会偷偷改我的代码或删文件吗？</summary><p data-i18n="faq_a2">默认情况下，写文件、跑命令等"危险"操作都会先征求你同意。权限模式可调，但你始终是船长。删除/覆盖前它会先确认。</p></details>
+      <details><summary data-i18n="faq_q3">对话太长变慢/变笨怎么办？</summary><p data-i18n="faq_a3">用 <span class="kbd">/compact</span> 压缩，或 <span class="kbd">/clear</span> 开新局。换任务务必清场。</p></details>
+      <details><summary data-i18n="faq_q4">能离开终端用吗？</summary><p data-i18n="faq_a4">能。VS Code / JetBrains 插件、桌面 App（Mac/Win）、网页版 claude.ai/code 都可以。</p></details>
+      <details><summary data-i18n="faq_q5">怎么报 bug 或给反馈？</summary><p data-i18n="faq_a5">会话里输入 <span class="kbd">/bug</span> 或 <span class="kbd">/feedback</span>，直接把问题反馈给团队。</p></details>
+      <details><summary data-i18n="faq_q6">我用的是哪个模型？怎么换？</summary><p data-i18n="faq_a6">用 <span class="kbd">/model</span> 切换（如 Opus / Sonnet / Haiku）。最强是 Claude 4.X 系列。</p></details>
     </div>
   </section>
 
   <footer class="footer">
     <div class="footer-cta">
-      <h2>现在，去打开你的终端 🚀</h2>
-      <p>读一百遍不如敲一次 <code>claude</code>。从一句简单的对话开始，你已经在通往大神的路上了。</p>
+      <h2 data-i18n="ft_h">现在，去打开你的终端 🚀</h2>
+      <p data-i18n="ft_p">读一百遍不如敲一次 <code>claude</code>。从一句简单的对话开始，你已经在通往大神的路上了。</p>
     </div>
-    <div class="footer-meta">
+    <div class="footer-meta" data-i18n="ft_meta">
       Claude Code 通关秘籍 · 一份由浅入深的实战教程 · 命令以官方 <span class="kbd">/help</span> 为准
     </div>
   </footer>
@@ -575,5 +576,6 @@ claude mcp add my-server -- npx -y @some/mcp-server
 <button id="back-top" aria-label="回到顶部">↑</button>
 
 <script src="script.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>

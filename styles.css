@@ -275,6 +275,14 @@ code{font-family:var(--mono);font-size:.88em}
 #back-top:hover{transform:translateY(-4px)}
 #menu-toggle{display:none;position:fixed;top:14px;left:14px;z-index:200;background:var(--panel);border:1px solid var(--border);color:var(--text);width:44px;height:44px;border-radius:11px;font-size:1.3rem;cursor:pointer}
 
+/* 语言切换按钮 */
+#lang-toggle{position:fixed;top:18px;right:18px;z-index:200;background:var(--panel);border:1px solid var(--border);color:var(--accent-2);min-width:46px;height:38px;padding:0 14px;border-radius:999px;font-size:.85rem;font-weight:800;cursor:pointer;transition:.18s;box-shadow:var(--shadow);font-family:var(--sans)}
+#lang-toggle:hover{border-color:var(--accent);transform:translateY(-2px)}
+
+/* 英文模式下命令卡片悬浮提示文案 */
+body[data-lang="en"] .cmd-card::after{content:"click to copy"}
+body[data-lang="en"] .cmd-card.copied::after{content:"copied ✓"}
+
 /* ============ 响应式 ============ */
 @media(max-width:980px){
   .hero{grid-template-columns:1fr;padding-top:72px}
